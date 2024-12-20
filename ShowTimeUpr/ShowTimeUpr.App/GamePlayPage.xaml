@@ -3,8 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShowTimeUpr.App.GamePlayPage"
              Title="Game Play">
-    
-    <Grid x:Name="MainGrid" Padding="10">
 
+    <Grid x:Name="MainGrid" Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!-- time -->
+        <Label x:Name="TimeLabel"
+               Text="Time: 00:00"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="20"
+               Grid.Row="0" />
+
+        <!-- score -->
+        <Label x:Name="ScoreLabel"
+               Text="Score: 0"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="20"
+               Grid.Row="0"/>
+        <Grid x:Name="GameGrid"
+              Grid.Row="1"
+              Padding="10"></Grid>
     </Grid>
 </ContentPage>

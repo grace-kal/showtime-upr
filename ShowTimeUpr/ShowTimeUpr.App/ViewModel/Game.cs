@@ -28,6 +28,7 @@ public class Game
     private void InitializeGame()
     {
         var board = new Board();
+        var cards = new List<Card>();
         var uniqueCardNum = (board.SizeX * board.SizeY) / 2;
 
         for (var i = 1; i <= uniqueCardNum; i++)
@@ -47,9 +48,11 @@ public class Game
                 IsMatched = false,
                 IsOpen = false
             };
-            board.Cards!.Add(card1);
-            board.Cards!.Add(card2);
+            cards.Add(card1);
+            cards.Add(card2);
         }
+
+        board.Cards = cards;
         board.Shuffle();
         Board = board;
     }
