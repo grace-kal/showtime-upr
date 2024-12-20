@@ -62,4 +62,14 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\ShowTimeUpr.Models\ShowTimeUpr.Models.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="GamePlayPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

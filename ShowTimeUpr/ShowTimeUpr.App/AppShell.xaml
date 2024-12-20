@@ -4,12 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ShowTimeUpr.App"
-    Shell.FlyoutBehavior="Disabled"
-    Title="ShowTimeUpr.App">
+    Title="ShowTimeUpr.App"
+    FlyoutBackgroundColor="{StaticResource Tertiary}">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <StackLayout>
+            <Label Text="Game menu" FontSize="20" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Game play">
+        <ShellContent ContentTemplate="{DataTemplate local:GamePlayPage}"></ShellContent>
+    </FlyoutItem>
 
 </Shell>

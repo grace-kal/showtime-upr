@@ -1,4 +1,6 @@
-﻿namespace ShowTimeUpr.App
+﻿using Microsoft.Maui.Controls;
+
+namespace ShowTimeUpr.App
 {
     public partial class AppShell : Shell
     {

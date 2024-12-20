@@ -12,5 +12,6 @@ namespace ShowTimeUpr.Models
         public int Score { get; set; }
         [Required]
         public string PasswordHash { get; set; }
+        public string PreferredCardBack { get; set; }
     }
 }

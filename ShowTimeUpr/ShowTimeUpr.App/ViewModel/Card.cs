@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ShowTimeUpr.App.ViewModel;
 
-namespace ShowTimeUpr.App.ViewModel
+public class Card
 {
-    internal class Card
-    {
-    }
+    public int Id { get; set; }
+    public bool IsOpen { get; set; }
+    public bool IsMatched { get; set; }
+    public string ImageUrl { get; set; }
 }
+
