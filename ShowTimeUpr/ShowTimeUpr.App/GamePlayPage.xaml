@@ -25,6 +25,8 @@
                VerticalOptions="Center"
                FontSize="20"
                Grid.Row="0"/>
+
+
         <Grid x:Name="GameGrid"
               Grid.Row="1"
               Padding="10"></Grid>
