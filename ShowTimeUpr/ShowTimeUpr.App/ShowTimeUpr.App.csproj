@@ -63,6 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\ShowTimeUpr.DataAccess\ShowTimeUpr.DataAccess.csproj" />
 	  <ProjectReference Include="..\ShowTimeUpr.Models\ShowTimeUpr.Models.csproj" />
 	</ItemGroup>
 

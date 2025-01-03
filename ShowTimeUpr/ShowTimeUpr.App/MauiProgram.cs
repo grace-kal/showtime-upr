@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
+using ShowTimeUpr.DataAccess;
 
 namespace ShowTimeUpr.App
 {
@@ -17,9 +18,12 @@ namespace ShowTimeUpr.App
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-            
+
+
+            builder.Services.AddSingleton<IUserRepo, UserRepo>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
