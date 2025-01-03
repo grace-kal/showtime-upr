@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowTime.Mobile.LoginPage"
+             Title="Login"
+             BackgroundColor="{StaticResource BackgroundLogo}">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to ShowTime game!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="UsernameEntry" Placeholder="Username" TextColor="MidnightBlue" BackgroundColor="{StaticResource PrimaryDark}" Margin="10" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" TextColor="MidnightBlue" BackgroundColor="{StaticResource PrimaryDark}" Margin="10" />
+
+        <Button Text="Login" BackgroundColor="{StaticResource PrimaryDark}" TextColor="MidnightBlue" Clicked="OnLoginBtnClicked" Margin="10" />
+        <Button Text="Register" BackgroundColor="MidnightBlue" TextColor="{StaticResource PrimaryDark}" Clicked="OnRegisterBtnClicked" Margin="100" />
+    </VerticalStackLayout>
+</ContentPage>

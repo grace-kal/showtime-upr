@@ -21,4 +21,8 @@
         <ShellContent ContentTemplate="{DataTemplate local:GamePlayPage}"></ShellContent>
     </FlyoutItem>
 
+    <FlyoutItem Title="Login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
+    </FlyoutItem>
+
 </Shell>
